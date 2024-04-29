@@ -1,0 +1,22 @@
+.app {
+  font-family: $ff-inter, Arial, Helvetica, sans-serif;
+  font-size: $fs-m;
+  line-height: 1.5rem;
+  font-weight: $fw-normal;
+
+  min-height: 100vh;
+
+  background-color: $black-light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  scroll-behavior: smooth;
+
+  &__main {
+    flex-grow: 1;
+  }
+}

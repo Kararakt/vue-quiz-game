@@ -1,0 +1,31 @@
+// Цвета
+$black-light: hsl(228, 10%, 10%);
+$black: hsl(240, 10%, 8%);
+
+// Шрифты
+$ff-inter: "Inter";
+
+//  Насыщенность
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-black: 900;
+
+// Размер текста
+$fs-base: 1rem;
+
+$fs-xxs: 0.6875rem;
+$fs-xs: 0.75rem;
+$fs-s: 0.875rem;
+$fs-m: $fs-base;
+$fs-l: 1.125rem;
+$fs-xl: 1.5rem;
+$fs-xxl: 1.875rem;
+
+// Точки остановы
+$breakpoints: (
+  "sm": 40rem,
+  "md": 48rem,
+  "lg": 64rem,
+  "xl": 80rem,
+  "xxl": 96rem,
+);
