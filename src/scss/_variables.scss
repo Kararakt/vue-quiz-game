@@ -1,6 +1,11 @@
 // Цвета
-$black-light: hsl(228, 10%, 10%);
-$black: hsl(240, 10%, 8%);
+$black: hsl(228, 19%, 5%);
+$black-light: hsl(215, 23%, 16%);
+$black-transparent: hsla(0, 0%, 0%, 0.5);
+$gray: hsl(220, 3%, 78%);
+$white: hsl(0, 0%, 100%);
+$skyblue: hsl(176, 96%, 69%);
+$skyblue-dark: hsl(178, 40%, 45%);
 
 // Шрифты
 $ff-inter: "Inter";
@@ -27,5 +32,4 @@ $breakpoints: (
   "md": 48rem,
   "lg": 64rem,
   "xl": 80rem,
-  "xxl": 96rem,
 );

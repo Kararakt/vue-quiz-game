@@ -1,3 +1,38 @@
 .header {
   @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    @include transition;
+    height: 3.5rem;
+    width: 3.5rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-weight: $fw-black;
+    font-size: $fs-xl;
+    margin-left: 1rem;
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
 }

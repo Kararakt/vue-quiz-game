@@ -1,0 +1,15 @@
+.link {
+  @include transition;
+  text-decoration: none;
+  font-weight: $fw-medium;
+  font-size: $fs-l;
+  color: $gray;
+
+  &:hover {
+    color: $skyblue-dark;
+  }
+
+  &_active {
+    color: $white;
+  }
+}
