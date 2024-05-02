@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  gap: 1.5rem;
+
+  &__menu {
+    padding: 1rem;
+    background-color: $black-light;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+    max-width: 20rem;
+    height: min-content;
+  }
+
+  &__choice {
+    color: $white;
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+  }
+
+  &__cards {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}

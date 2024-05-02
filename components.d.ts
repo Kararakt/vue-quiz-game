@@ -7,8 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    App: typeof import('./src/App.vue')['default']
-    Header: typeof import('./src/components/Header/Header.vue')['default']
+    BaseCheckBox: typeof import('./src/components/UI/BaseCheckBox/BaseCheckBox.vue')['default']
+    BaseInput: typeof import('./src/components/UI/BaseInput/BaseInput.vue')['default']
+    BaseLink: typeof import('./src/components/UI/BaseLink/BaseLink.vue')['default']
+    BaseRadio: typeof import('./src/components/UI/BaseRadio/BaseRadio.vue')['default']
+    QuizCard: typeof import('./src/components/QuizCard/QuizCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

@@ -6,7 +6,9 @@ import Header from './layouts/Header/Header.vue';
 
 <template>
   <div class="app">
-    <Header />
+    <div class="app__header">
+      <Header />
+    </div>
     <main class="app__main">
       <RouterView />
     </main>

@@ -1,0 +1,20 @@
+.input {
+  background-color: $black;
+  color: $white;
+  border: 0;
+  outline: 0;
+  line-height: 1.6875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid transparent;
+  @include transition;
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $skyblue;
+  }
+}

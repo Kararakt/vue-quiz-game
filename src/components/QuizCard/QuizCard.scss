@@ -1,0 +1,36 @@
+.quiz-card {
+  outline: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem 0.75rem 1.4375rem;
+  background-color: $black-light;
+  cursor: pointer;
+  border: 0.0625rem solid $black-light;
+  width: 16.375rem;
+
+  &:focus,
+  &:hover {
+    border-color: $skyblue;
+  }
+
+  &__image {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__title {
+    color: $white;
+    font-weight: $fw-medium;
+  }
+
+  &__container {
+    color: $gray;
+    font-size: $fs-s;
+  }
+
+  &__icon {
+    margin-right: 0.25rem;
+  }
+}

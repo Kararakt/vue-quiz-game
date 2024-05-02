@@ -6,7 +6,7 @@
 
   min-height: 100vh;
 
-  background-color: $black-light;
+  background-color: $black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,17 @@
 
   scroll-behavior: smooth;
 
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: $black-light;
+  }
+
   &__main {
     flex-grow: 1;
+    @include container;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
