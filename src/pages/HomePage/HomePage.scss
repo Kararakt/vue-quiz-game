@@ -34,4 +34,14 @@
     justify-content: center;
     gap: 1.5rem;
   }
+
+  &__empty {
+    color: $white;
+    font-size: $fs-l;
+    font-weight: $fw-black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

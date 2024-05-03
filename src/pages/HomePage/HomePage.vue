@@ -19,9 +19,12 @@ const filteredQuizArray = computed(() => {
     const matchesType =
       checkboxSorting.value.length === 0 ||
       checkboxSorting.value.includes(quiz.type);
+
     return matchesTitle && matchesType;
   });
 });
+
+const isFilteredQuizArray = computed(() => filteredQuizArray.value.length > 0);
 </script>
 
 <template>
@@ -46,10 +49,11 @@ const filteredQuizArray = computed(() => {
         />
       </div>
     </form>
-    <ul class="home__cards">
+    <ul v-if="isFilteredQuizArray" class="home__cards">
       <li v-for="card in filteredQuizArray" :key="card.id">
         <QuizCard :card="card" />
       </li>
     </ul>
+    <p v-else class="home__empty">Ничего не найдено...</p>
   </section>
 </template>

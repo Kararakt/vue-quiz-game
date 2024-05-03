@@ -53,6 +53,10 @@
     &:focus {
       box-shadow: 0 0 0 0.125rem $white;
     }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 
   &__label {
@@ -68,5 +72,9 @@
   &__input:checked + &__label,
   &__input:hover + &__label {
     color: $white;
+  }
+
+  &__input:disabled + &__label {
+    cursor: not-allowed;
   }
 }

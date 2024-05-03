@@ -7,13 +7,16 @@ interface Props {
   value: string;
   label: string;
   id: string;
+  disabled?: boolean;
 }
 
 const emit = defineEmits<{
   (event: 'update:modelValue', value: any): void;
 }>();
 
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+  disabled: false,
+});
 
 const modelUpdate = computed({
   get: () => props.modelValue,
@@ -29,6 +32,7 @@ const modelUpdate = computed({
       :name="name"
       :id="id"
       :value="value"
+      :disabled="disabled"
       class="radio__input"
     />
     <label :for="id" class="radio__label">{{ label }}</label>

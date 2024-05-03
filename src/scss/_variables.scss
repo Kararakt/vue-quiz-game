@@ -6,6 +6,8 @@ $gray: hsl(220, 3%, 78%);
 $white: hsl(0, 0%, 100%);
 $skyblue: hsl(176, 96%, 69%);
 $skyblue-dark: hsl(178, 40%, 45%);
+$red: hsl(0, 100%, 50%);
+$green: hsl(120, 100%, 25%);
 
 // Шрифты
 $ff-inter: "Inter";
@@ -18,13 +20,10 @@ $fw-black: 900;
 // Размер текста
 $fs-base: 1rem;
 
-$fs-xxs: 0.6875rem;
-$fs-xs: 0.75rem;
 $fs-s: 0.875rem;
 $fs-m: $fs-base;
 $fs-l: 1.125rem;
 $fs-xl: 1.5rem;
-$fs-xxl: 1.875rem;
 
 // Точки остановы
 $breakpoints: (

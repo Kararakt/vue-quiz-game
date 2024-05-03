@@ -1,0 +1,27 @@
+.button {
+  @include transition;
+  font-size: $fs-l;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border: 0.0625rem solid $skyblue;
+  color: $white;
+
+  &:hover {
+    border-color: $skyblue-dark;
+    background-color: $skyblue-dark;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0.625rem $white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $skyblue-dark;
+    border-color: $skyblue-dark;
+    opacity: 0.5;
+  }
+}
