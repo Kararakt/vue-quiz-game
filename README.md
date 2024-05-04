@@ -1,9 +1,44 @@
-# Vue 3 + TypeScript + Vite
+## Vue Quiz Game
+Это проект игры викторины, созданный с использованием Vue 3. Викторина включает 10 вопросов, случайно выбранных из 20 вопросов по каждой категории.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Содержание
+- [Основные функции](#основные-функции)
+- [Технологии](#технологии)
+- [Требования](#требования)
+- [Установка](#установка)
+- [Ссылка на проект](#ссылка-на-проект)
 
-## Recommended Setup
+## Основные функции
+- Игра в викторину: Пользователи могут играть в викторину, отвечая на различные вопросы.
+- Множество категорий: Викторина включает в себя вопросы на различные темы, позволяя выбирать категории по своему усмотрению.
+- Сохранение результатов: Все результаты игры сохраняются в localStorage, что позволяет пользователям вернуться и посмотреть свои предыдущие результаты.
+- Начало новой викторины: Для начала новой викторины нужно нажать на кнопку "Закончить квиз". Это обнулит все предыдущие результаты и начнет новую игру.
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Технологии
+- Vite
+- HTML
+- SCSS
+- TypeScript
+- Vue 3
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Требования
+Для запуска проекта, необходимо установить:
+- [NodeJS](https://nodejs.org/en/download)
+- [pnpm](https://pnpm.io/installation)
+
+## Установка
+1. Клонируйте репозиторий
+```sh
+git@github.com:Kararakt/vue-quiz-game.git
+```
+2. Установите все необходимые PNPM пакеты
+```sh
+pnpm install
+```
+3. Запустите проект
+```sh
+pnpm dev
+```
+
+## Ссылка на проект
+https://vue-quiz-game-gamma.vercel.app
