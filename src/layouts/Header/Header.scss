@@ -26,6 +26,10 @@
     font-weight: $fw-black;
     font-size: $fs-xl;
     margin-left: 1rem;
+
+    @include downMedia(sm) {
+      font-size: $fs-l;
+    }
   }
 
   &__links {

@@ -48,7 +48,7 @@ const isButtonDisabled = computed(() => {
 // Функция для подсчета количества правильных ответов в викторине
 const calculateCorrectAnswers = (quiz: QuizItem[]) => {
   return quiz.reduce((correctCount, quiz) => {
-    const questionId = String(quiz.id);
+    const questionId = quiz.id;
     const userAnswer = modelQuiz.value[questionId];
     const correctAnswer = quiz.correctAnswer;
 
@@ -131,7 +131,7 @@ onMounted(() => {
   answerStatus.value = storedAnswerStatus ? JSON.parse(storedAnswerStatus) : {};
 });
 
-//  Следит за изменениями в modelQuiz.value и сохраняет ответы в local storage при изменении
+//  Следит за изменениями в modelQuiz.value и сохраняет ответы в localStorage при изменении
 watch(
   () => modelQuiz.value,
   () => {

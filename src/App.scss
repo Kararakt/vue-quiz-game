@@ -4,7 +4,9 @@
   line-height: 1.5rem;
   font-weight: $fw-normal;
 
-  min-height: 100vh;
+  min-height: 100dvh;
+
+  min-width: 20rem;
 
   background-color: $black;
 
@@ -28,5 +30,10 @@
     @include container;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+
+    @include downMedia(sm) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
   }
 }

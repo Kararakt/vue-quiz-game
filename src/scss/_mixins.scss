@@ -13,3 +13,14 @@
 @mixin transition($duration: 0.35s, $timing-function: linear) {
   transition: all $duration $timing-function;
 }
+
+// media вида (max-width: x), где x breakpoints
+@mixin downMedia($b) {
+  @if map-has-key($breakpoints, $b) {
+    $v: map-get($breakpoints, $b);
+
+    @media (max-width: $v) {
+      @content;
+    }
+  }
+}

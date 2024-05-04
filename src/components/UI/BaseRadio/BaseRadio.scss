@@ -1,12 +1,18 @@
 .radio {
   position: relative;
 
+  @include downMedia(sm) {
+    display: flex;
+  }
+
   &__input {
     @include transition($duration: 0.3s);
     border-radius: 50%;
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 1.3125rem;
+    max-width: 1.3125rem;
+    width: 100%;
     outline: none;
     display: inline-block;
     vertical-align: top;
@@ -15,7 +21,6 @@
     cursor: pointer;
     border: 0.0625rem solid $skyblue-dark;
     background: $skyblue-dark;
-    width: 1.3125rem;
 
     &:after {
       @include transition($duration: 0.3s);
@@ -67,6 +72,10 @@
     vertical-align: top;
     cursor: pointer;
     margin-left: 0.5rem;
+
+    @include downMedia(sm) {
+      font-size: $fs-s;
+    }
   }
 
   &__input:checked + &__label,

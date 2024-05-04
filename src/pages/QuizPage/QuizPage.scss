@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     color: $white;
+
+    @include downMedia(sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
   }
 
   &__result {
@@ -27,6 +33,11 @@
     color: $white;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    font-size: $fs-l;
+
+    @include downMedia(sm) {
+      font-size: $fs-m;
+    }
 
     &_correct {
       color: $green;
